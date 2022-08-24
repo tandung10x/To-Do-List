@@ -1,51 +1,105 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background: #457fca; /* fallback for old browser */
-    background: -webkit-linear-gradient(to left, #457fca, #5691c8); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #457fca, #5691c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+ */
-
+    background-color: rgb(52, 56, 65); 
+    width: 100%;
+    height: 100vh;
     color: #fff;
-    font-size: 18px;
 }
 
 .container {
-    width: 900px;
-    margin: 100px auto;
+    width: 100%;
+    height: 600px;
+    max-width: 450px;
+    margin: 120px auto;
+    background: #28459c;
+    border-radius: 25px;
+    padding: 25px;
 }
 
-input[type="text"] {
-    border: solid 1px #fff;
-    height: 35px;
-    font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 500px;
-    color: #fff;
-    background: none;
+form {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+input {
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 5px;
+    padding-left: 15px;
 }
 
 .btn-submit {
-    height: 35px;
-    border-radius: 10px;
+    width: 15%;
+    height: 100%;
     border: none;
-    background-color: #5691c8;
-    width: 75px;
+    outline: none;
+    background: #5e8dca;
     color: #fff;
-    font-size: 18px;
-    margin-left: 25px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.container h4 {
+    margin-top: 25px; 
+    margin-bottom: 10px;
 }
 
 #todo-list li {
-    height: 30px;
-    line-height: 30px;
-    width: 50%;
+    position: relative;
+    list-style: none;
+    width: 350px;
+    height: 50px;
+    background: #031956;
+    padding: 0 15px;
+    line-height: 50px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    overflow: hidden;
 }
 
-#todo-list li:hover {
-    background-color: #fff;
-    color: #555;
+i {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fa-trash {
+    right: 0px;
+}
+
+.fa-check {
+    right: 25px;
+}
+
+.btn-clear {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background: #5e8dca;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 15px;
+    opacity: 0.6;
+  }
+.btn-clear:hover {
+    opacity: 1;
 }

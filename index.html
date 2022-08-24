@@ -5,26 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
-    <h1>Quản lý Todo</h1>
-    <section id="section-add">
+    <h1>To-do app</h1>
+    <div id="section-add">
       <form>
-        <input type="text" name="todo" id="newTodo">
+        <input type="text" name="todo" id="newTodo" placeholder="Enter a new task">
         <button class="btn-submit" onclick="event.preventDefault(); onAddClick();">Add</button>
       </form>
-    </section>
+    </div>
 
-    <section id="section-list">
+    <div id="section-list">
+      <h4>Today's list:</h4>
       <ul id="todo-list">
         <!--li tag todo will be added here-->
       </ul>
-    </section>
+    </div>
   </div>
-<script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
