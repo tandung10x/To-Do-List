@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Quản lý Todo</h1>
+    <section id="section-add">
+      <form>
+        <input type="text" name="todo" id="newTodo">
+        <button class="btn-submit" onclick="event.preventDefault(); onAddClick();">Add</button>
+      </form>
+    </section>
+
+    <section id="section-list">
+      <ul id="todo-list">
+        <!--li tag todo will be added here-->
+      </ul>
+    </section>
+  </div>
+<script src="app.js"></script>
+</body>
+
+</html>
